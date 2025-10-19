@@ -8,6 +8,7 @@ authors = [
 ]
 requires-python = ">=3.13"
 dependencies = [
+    "chainlit>=2.8.3",
     "openai-agents>=0.4.0",
 ]
 
@@ -15,6 +16,9 @@ dependencies = [
 hands-off = "hands_off:main"
 agent = "hands_off.main:run_main"
 agent1 = "hands_off.main1:run_main"
+[tool.uv.scripts]
+agent3 = "python src/hands_off/main2.py"
+
 
 
 
